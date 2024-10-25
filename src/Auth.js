@@ -10,11 +10,9 @@ import logo from './white_background.png'; // Import your logo image
 import Registration from './Register';
 import Home from './Home';
 import Login from './Login';
-import Payment from './Payment';
-import Staff from './Staff';
 
 
-const App = () => {
+const Auth = () => {
     return (
         <Router>
             <div>
@@ -24,10 +22,8 @@ const App = () => {
                         CITU - SMART EATS
                     </h1>
                     <ul>
-                    <a href="/menuitem" className="button">Menu Item</a>
-                    <a href="/inventory" className="button">Inventory</a>
-                    <a href="/payment" className="button">Payment</a>
-                    <a href="/staff" className="button">Staff</a>
+            <a href="/login" className="button">Login</a>
+            <a href="/register" className="button">Register</a>
                     </ul>
                 </nav>
                 <Routes>
@@ -35,8 +31,6 @@ const App = () => {
                     <Route path="/view-all" element={<ViewAllMenuItems />} />
                     <Route path="/inventory" element={<Inventory />} />
                     <Route path="/inventory-table" element={<InventoryList />} />
-                    <Route path="/payment" element={<Payment />} />
-                    <Route path="/staff" element={<Staff />} />
                     <Route path="/register" element={<Registration />} />
                     <Route path="/home" element={<Home/>} />
                     <Route path="/login" element={<Login/>}/>
@@ -46,4 +40,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Auth;
