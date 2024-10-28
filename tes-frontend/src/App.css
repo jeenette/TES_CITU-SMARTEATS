@@ -1,0 +1,33 @@
+nav {
+  background-color:#8c2a2c;
+  padding: 10px;
+}
+
+nav h1{
+  text-align: center;
+  color: white;
+
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav img {
+ 
+  margin-right: 30px; /* Space between logo and text */
+  vertical-align: middle; /* Aligns the logo vertically with the text */
+}
