@@ -27,7 +27,7 @@ const Payment = () => {
   const handleCreatePayment = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/api/payments', paymentDetails); // Replace with your actual API URL
+      const response = await axios.post('http://localhost:8080/api/payments', paymentDetails); 
       console.log('Payment created successfully:', response.data);
       alert('Payment created successfully!');
       navigate('/success');  // Navigate to a success page (optional)

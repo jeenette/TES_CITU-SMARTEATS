@@ -27,7 +27,7 @@ const Staff = () => {
   const handleCreateStaff = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/api/staff', staffDetails); // Replace with your actual API URL
+      const response = await axios.post('http://localhost:8080/api/staff', staffDetails); 
       console.log('Staff member created successfully:', response.data);
       alert('Staff member created successfully!');
       navigate('/staff-success');  // Navigate to a success page (optional)
